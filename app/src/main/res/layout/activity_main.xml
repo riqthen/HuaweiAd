@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ly_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:fitsSystemWindows="true"
+    tools:context="com.riq.huaweiad.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_mainA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_main_btn"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/ic_launcher_round"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="2000万前置\n高清美拍" />
+
+            <TextView
+                android:id="@+id/btn_mainB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_main_btn"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/ic_launcher_round"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="光学变焦\n双摄" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_mainC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_main_btn"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/ic_launcher_round"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="臻美\n时尚设计" />
+
+            <TextView
+                android:id="@+id/btn_mainD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_main_btn"
+                android:drawableTop="@mipmap/ic_launcher_round"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="特色\n功能" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_navigation" />
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
