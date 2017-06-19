@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@mipmap/ic_launcher"
     android:orientation="vertical"
-    tools:context="com.riq.huaweiad.SplashActivity">
+    tools:context="com.example.ad.ui.SplashActivity">
 
     <SurfaceView
         android:id="@+id/sv"

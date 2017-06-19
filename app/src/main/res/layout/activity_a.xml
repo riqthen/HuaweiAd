@@ -6,16 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.riq.huaweiad.AActivity">
+    tools:context="com.example.ad.ui.a.AActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
 
         <com.youth.banner.Banner
-            android:id="@+id/banner"
+            android:id="@+id/a_banner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:delay_time="1500"
@@ -31,7 +30,7 @@
             android:layout_margin="20dp">
 
             <TextView
-                android:id="@+id/btn_mainA_a"
+                android:id="@+id/btn_mainA_cam"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
@@ -41,7 +40,7 @@
                 android:text="体验自拍" />
 
             <TextView
-                android:id="@+id/btn_mainA_b"
+                android:id="@+id/btn_mainA_more"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
@@ -53,7 +52,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/ly_points"
+            android:id="@+id/ly_a_points"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/n_ll"
@@ -62,44 +61,60 @@
             android:orientation="horizontal">
 
             <View
-                android:id="@+id/point1"
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:background="@drawable/point" />
 
             <View
-                android:id="@+id/point2"
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginBottom="6dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:background="@drawable/point" />
 
             <View
-                android:id="@+id/point3"
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginBottom="6dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:background="@drawable/point" />
 
             <View
-                android:id="@+id/point4"
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginBottom="6dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="6dp"
                 android:background="@drawable/point" />
+
+            <View
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/point" />
+
+            <View
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/point" />
+
+
         </LinearLayout>
 
     </RelativeLayout>

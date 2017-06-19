@@ -5,79 +5,75 @@
     android:id="@+id/ly_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/bg"
+    android:background="@mipmap/ic_launcher"
     android:fitsSystemWindows="true"
-    tools:context="com.riq.huaweiad.MainActivity">
+    tools:context=".ui.MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include layout="@layout/layout_toolbar" />
+        <include
+            android:id="@+id/n_toolbar"
+            layout="@layout/layout_toolbar" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:id="@+id/n_rl1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_below="@id/n_toolbar"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
 
+            <!--使用ImageView会报错-->
             <TextView
                 android:id="@+id/btn_mainA"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/bg_main_btn"
-                android:drawablePadding="10dp"
-                android:drawableTop="@mipmap/ic_launcher_round"
-                android:gravity="center"
-                android:padding="20dp"
-                android:text="2000万前置\n高清美拍" />
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/btn_a" />
 
             <TextView
                 android:id="@+id/btn_mainB"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/bg_main_btn"
-                android:drawablePadding="10dp"
-                android:drawableTop="@mipmap/ic_launcher_round"
-                android:gravity="center"
-                android:padding="20dp"
-                android:text="光学变焦\n双摄" />
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/btn_a" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_below="@+id/n_rl1"
+            android:layout_gravity="center">
 
             <TextView
                 android:id="@+id/btn_mainC"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/bg_main_btn"
-                android:drawablePadding="10dp"
-                android:drawableTop="@mipmap/ic_launcher_round"
-                android:gravity="center"
-                android:padding="20dp"
-                android:text="臻美\n时尚设计" />
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/btn_a" />
 
             <TextView
                 android:id="@+id/btn_mainD"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/bg_main_btn"
-                android:drawableTop="@mipmap/ic_launcher_round"
-                android:gravity="center"
-                android:padding="20dp"
-                android:text="特色\n功能" />
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/btn_a" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
-    </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/btn_config" />
+
+    </RelativeLayout>
 
     <include layout="@layout/layout_navigation" />
 

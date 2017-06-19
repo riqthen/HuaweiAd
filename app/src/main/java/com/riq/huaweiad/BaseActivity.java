@@ -18,7 +18,7 @@ import butterknife.OnClick;
 
 public abstract class BaseActivity extends AppCompatActivity {
     @BindView(R.id.iv_back)
-    ImageView ivBack;
+    public ImageView ivBack;
     @BindView(R.id.iv_drawer)
     ImageView ivDrawer;
     @BindView(R.id.ly_main)
